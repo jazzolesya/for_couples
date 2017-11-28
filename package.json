@@ -1,0 +1,11 @@
+{
+  "name": "for_couples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jazzolesya/for_couples.git",
+  "author": "Olesia <jazzolesya@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6"
+  }
+}
