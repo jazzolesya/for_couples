@@ -1,0 +1,20 @@
+#layouts__nav
+  %nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse.projects_nav
+    %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarCollapse", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarCollapse", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    %a.navbar-brand.projects_nav__logo{:href => "#"} Happy Couple
+    #navbarCollapse.collapse.navbar-collapse.my
+      %ul.navbar-nav.ml-auto
+        %li.nav-item.projects_nav__item.active
+          %a.nav-link.mr-md-3{:href => "#"}
+            Home
+            %span.sr-only (current)
+        %li.nav-item.mr-md-3
+          %a.nav-link.projects_nav__item{:href => "#"} Our mission
+        %li.nav-item.mr-md-3
+          %a.nav-link.projects_nav__item{:href => "#"} Materials
+        %li.nav-item.mr-md-3
+          %a.nav-link.projects_nav__item{:href => "#"} Contact us
+
+.welcome_img
+  = image_tag('pic.jpg', class: "cover_img")

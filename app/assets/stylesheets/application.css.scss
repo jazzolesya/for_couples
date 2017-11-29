@@ -11,5 +11,39 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require bootstrap/dist/css/bootstrap
  *= require_self
  */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana;
+}
+
+.cover_img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.welcome_img img {
+ height: 100vh;
+ width: 100vw;
+}
+
+.projects_nav {
+	background-color: transparent!important;
+	&__item {
+		color: #F5F5F5!important;
+	}
+}
+
+.projects_nav.shrink {
+	background-color: #292b2c!important;
+	transition: all ease .5s;
+	opacity: 0.5;
+}
