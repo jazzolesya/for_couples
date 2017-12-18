@@ -6,6 +6,8 @@
   "author": "Olesia <jazzolesya@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.6"
+    "bootstrap": "4.0.0-alpha.6",
+    "lightgallery.js": "^1.0.1",
+    "swipebox": "^1.4.6"
   }
 }

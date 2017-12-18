@@ -1,0 +1,31 @@
+.article_index
+  .row.aricle_index__row
+    .col-md-4.article_index__col4
+      .article_index__col
+        .artilce_index__img
+          = image_tag('1.jpeg', class: 'cover-img')
+          .article_index__title
+            - @articles.each do |article|
+              = article.title
+    .col-md-4.article_index__col4
+      .article_index__col
+        .artilce_index__img
+          = image_tag('2.jpeg', class: 'cover-img')
+    .col-md-4.article_index__col4
+      .article_index__col
+        .artilce_index__img
+          = image_tag('3.jpeg', class: 'cover-img')
+  
+  .row.aricle_index__row
+    .col-md-4.article_index__col4
+      .article_index__col
+        .artilce_index__img
+          = image_tag('4.jpeg', class: 'cover-img')
+    .col-md-4.article_index__col4
+      .article_index__col
+        .artilce_index__img
+          = image_tag('5.jpeg', class: 'cover-img')
+    .col-md-4.article_index__col4
+      .article_index__col
+        .artilce_index__img
+          = image_tag('6.jpeg', class: 'cover-img')

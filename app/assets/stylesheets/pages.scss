@@ -1,3 +1,26 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.welcome_col {
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+}
+
+.welcome {
+	&_mission:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	background-color: #272727;
+	width: 80px;
+	bottom: -7px;
+	left: 50%;
+	margin-left: -40px;
+  }
+    &_p {
+    	padding-top: 30px;
+    	text-align: center;
+    }
+}
