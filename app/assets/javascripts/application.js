@@ -11,18 +11,27 @@
 // about supported directives.
 //
 //= require jquery
+//= require tether/src/js/utils
+//= require tether/src/js/tether
 //= require bootstrap/dist/js/bootstrap
 //= require jquery_ujs
+//= require lightgallery.js/src/js/lightgallery
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function() {
-	$(window).scroll(function() {
-  	if($(document).scrollTop()) {
-    	$('.projects_nav').addClass('shrink');
-    }
-    else {
-    $('.projects_nav').removeClass('shrink');
-    }
-  });
-});
+// $(document).ready(function() {
+// 	$(window).scroll(function() {
+//   	if($(document).scrollTop()) {
+//     	$('.projects_nav').addClass('shrink');
+//     }
+//     else {
+//     $('.projects_nav').removeClass('shrink');
+//     }
+//   });
+// });
+
+
+// $(document).ready(function() {
+//     $("#lightgallery").lightGallery(); 
+//   });
+
