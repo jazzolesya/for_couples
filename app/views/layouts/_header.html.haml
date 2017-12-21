@@ -6,15 +6,30 @@
     #navbarCollapse.collapse.navbar-collapse.my
       %ul.navbar-nav.ml-auto
         %li.nav-item.projects_nav__item.active
-          %a.nav-link.mr-md-3{:href => "#"}
-            home
-            %span.sr-only (current)
+          .nav-link.mr-md-3{:href => "#"}
+            = link_to 'home', articles_path
         %li.nav-item.mr-md-3
-          %a.nav-link.projects_nav__item{:href => "#"} our mission
+          .nav-link.projects_nav__item{:href => "#"}
+            = link_to 'our mission', '#'
         %li.nav-item.mr-md-3
-          %a.nav-link.projects_nav__item{:href => "#"} materials
+          .nav-link.projects_nav__item{:href => "#"}
+            = link_to 'materials', '#'
         %li.nav-item.mr-md-3
-          %a.nav-link.projects_nav__item{:href => "#"} contact us
+          .nav-link.projects_nav__item{:href => "#"} 
+            = link_to 'contact us', '#'
 
+
+.layouts_img
+  = image_tag('7.jpg')
+  .e2
+    .layouts_nav
+      .layouts_nav_item1
+        happy
+      .layouts_nav_item2
+        couple
+      .line.top
+      .line.bottom
+      .line.left
+      .line.right
 / .welcome_img
 /   = image_tag('pic.jpg', class: "cover_img")
