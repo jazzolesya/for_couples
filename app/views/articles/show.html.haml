@@ -1,3 +1,73 @@
-- @articles.each do |article|
-  = article.title
-  = article.content
+= render "articles/article_nav"
+
+.article_show
+  .row
+    .col-md-8.article_show_col
+      .article_show_title
+        = @article.title
+      .article_show_date
+        = @article.created_at.strftime("%B %d, %Y")
+
+      .article_show_share
+        .article_show_share_i
+          %i.fa.fa-google-plus
+        .article_show_share_i
+          %i.fa.fa-facebook
+        .article_show_share_i
+          %i.fa.fa-twitter
+        .article_show_share_i
+          %i.fa.fa-pinterest-p
+        .article_show_share_i
+          %i.fa.fa-linkedin
+
+      .article_show_content
+        = @article.content
+    .col-md-4
+      .article_show_subscribe
+        .article_show_subscribe_title
+          Subsribe to our newsletter
+        .article_show_subscribe_block
+          .article_show_subscribe_block_n
+            %input.i{:placeholder => "First name"}
+            %input.i{:placeholder => "Last name"}
+          %input.e{:placeholder => "Email address"}
+          %button.sub-btn Subscribe
+      .article_show_recent
+        Recent updates
+      .article_show_recent_posts 
+        .article_show_recent_post-img
+          = image_tag('2.jpeg', class: 'cover-img')
+        .article_show_recent_post-b
+          .article_show_recent_post-cat
+            Article category 
+          .article_show_recent_post-title
+            Article title 
+      .article_show_recent_posts 
+        .article_show_recent_post-img
+          = image_tag('3.jpeg', class: 'cover-img')
+        .article_show_recent_post-b
+          .article_show_recent_post-cat
+            Article category 
+          .article_show_recent_post-title
+            Article title 
+      .article_show_recent_posts 
+        .article_show_recent_post-img
+          = image_tag('4.jpeg', class: 'cover-img')
+        .article_show_recent_post-b
+          .article_show_recent_post-cat
+            Article category 
+          .article_show_recent_post-title
+            Article title 
+      .article_show_recent_posts 
+        .article_show_recent_post-img
+          = image_tag('2.jpeg', class: 'cover-img')
+        .article_show_recent_post-b
+          .article_show_recent_post-cat
+            Article category 
+          .article_show_recent_post-title
+            Article title 
+
+
+
+
+

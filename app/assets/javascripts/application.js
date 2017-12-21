@@ -35,3 +35,8 @@
 //     $("#lightgallery").lightGallery(); 
 //   });
 
+
+// function myFunction() {
+//     $('.line').show(2000);
+//   };
+
